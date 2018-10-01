@@ -32,9 +32,6 @@
     <ClInclude Include="FastNoise\FastNoise.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="BaseMapGenerator.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="WorldMapGenerator.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>

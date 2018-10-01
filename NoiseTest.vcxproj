@@ -155,7 +155,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseMapGenerator.h" />
     <ClInclude Include="FastNoise\FastNoise.h" />
     <ClInclude Include="WorldMapGenerator.h" />
   </ItemGroup>
