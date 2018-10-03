@@ -148,15 +148,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FastNoise\FastNoise.cpp" />
+    <ClCompile Include="map\WorldMapGenerator.cpp" />
     <ClCompile Include="NoiseTest.cpp" />
-    <ClCompile Include="WorldMapGenerator.cpp" />
+    <ClCompile Include="utility\random.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FastNoise\FastNoise.h" />
-    <ClInclude Include="WorldMapGenerator.h" />
+    <ClInclude Include="map\Tile.h" />
+    <ClInclude Include="map\WorldMapGenerator.h" />
+    <ClInclude Include="utility\random.h" />
+    <ClInclude Include="utility\TextureManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

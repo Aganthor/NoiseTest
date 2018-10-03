@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\utility">
+      <UniqueIdentifier>{91c3df8d-7b82-4b96-9bbf-4b29efbce36d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\utility">
+      <UniqueIdentifier>{ab5bff24-8ffb-4dd1-b47b-6b2e6178157d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\map">
+      <UniqueIdentifier>{90bdb9f3-ce16-4e28-bb0a-a33dc97ab0ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\map">
+      <UniqueIdentifier>{288f367a-7b90-4208-9f1e-1142695554f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NoiseTest.cpp">
@@ -21,8 +33,11 @@
     <ClCompile Include="FastNoise\FastNoise.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="WorldMapGenerator.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="utility\random.cpp">
+      <Filter>Fichiers sources\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="map\WorldMapGenerator.cpp">
+      <Filter>Fichiers sources\map</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -32,8 +47,17 @@
     <ClInclude Include="FastNoise\FastNoise.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="WorldMapGenerator.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="utility\random.h">
+      <Filter>Fichiers d%27en-tête\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="map\WorldMapGenerator.h">
+      <Filter>Fichiers d%27en-tête\map</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\TextureManager.h">
+      <Filter>Fichiers d%27en-tête\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="map\Tile.h">
+      <Filter>Fichiers d%27en-tête\map</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
