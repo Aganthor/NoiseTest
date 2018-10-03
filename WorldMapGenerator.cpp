@@ -28,8 +28,19 @@ namespace map
 
 	}
 
+	void WorldMapGenerator::generateMap()
+	{
+		generateMap(m_seed, m_scale, m_octaves, m_persistance, m_lacunarity);
+	}
+
 	void WorldMapGenerator::generateMap(int seed, float scale, int octaves, float persistance, float lacunarity)
 	{
+		m_seed = { seed };
+		m_scale = { scale };
+		m_octaves = { octaves };
+		m_persistance = { persistance };
+		m_lacunarity = { lacunarity };
+
 		//Use simplex noise to generate our map.
 		m_myNoise.SetNoiseType(FastNoise::Simplex);
 
