@@ -11,5 +11,5 @@ public:
 
 
 private:
-	std::map<std::string, 
+	//std::map<std::string, 
 };
