@@ -1,20 +1,22 @@
-#include "WorldMapGenerator.h"
+#include "WorldMapGenerator.hpp"
 
 #include <limits>
 
-#include "../utility/random.h"
+#include "../utility/random.hpp"
 
 namespace map
 {
-	//
-	// Constructor with only the width and height. The callee should ensure that all other variables are set.
-	//
-	WorldMapGenerator::WorldMapGenerator(int width, int height) : m_mapWidth{ width }, m_mapHeight{ height }
+	WorldMapGenerator::WorldMapGenerator()
 	{
-		m_mapData.resize(m_mapWidth * m_mapHeight);
+	}
+	//
+	// Constructor with only the width and height. The callee should ensure
+	// that all other variables are set.
+	//
+	WorldMapGenerator::WorldMapGenerator(int width, int height) : BaseMapGenerator{ width, height }
+	{
 		Random::init();
-		m_offset.x = static_cast<float>(m_mapWidth / 2);
-		m_offset.y = static_cast<float>(m_mapHeight / 2);
+		setOffset();
 	}
 
 	//
@@ -23,15 +25,13 @@ namespace map
 	WorldMapGenerator::WorldMapGenerator(int width, int height, int seed, 
 		float scale, int octaves,
 		float persistance, float lacunarity, sf::Vector2f offset) :
-		m_mapWidth{ width }, m_mapHeight{ height }, 
+		BaseMapGenerator{ width, height }, 
 		m_seed{ seed }, m_scale{ scale }, 
 		m_octaves{ octaves }, m_persistance{ persistance }, 
 		m_lacunarity{ lacunarity }, m_offset{offset}
 	{
-		m_mapData.resize(m_mapWidth * m_mapHeight);
 		Random::init();
-		m_offset.x = static_cast<float>(m_mapWidth / 2);
-		m_offset.y = static_cast<float>(m_mapHeight / 2);
+		setOffset();
 	}
 
 	//

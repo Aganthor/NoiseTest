@@ -39,6 +39,9 @@
     <ClCompile Include="map\WorldMapGenerator.cpp">
       <Filter>Fichiers sources\map</Filter>
     </ClCompile>
+    <ClCompile Include="map\Level.cpp">
+      <Filter>Fichiers sources\map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -47,16 +50,25 @@
     <ClInclude Include="FastNoise\FastNoise.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="utility\random.h">
-      <Filter>Fichiers d%27en-tête\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="map\WorldMapGenerator.h">
+    <ClInclude Include="map\TileType.hpp">
       <Filter>Fichiers d%27en-tête\map</Filter>
     </ClInclude>
-    <ClInclude Include="utility\TextureManager.h">
+    <ClInclude Include="map\Tileinfo.hpp">
+      <Filter>Fichiers d%27en-tête\map</Filter>
+    </ClInclude>
+    <ClInclude Include="map\WorldMapGenerator.hpp">
+      <Filter>Fichiers d%27en-tête\map</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\random.hpp">
       <Filter>Fichiers d%27en-tête\utility</Filter>
     </ClInclude>
-    <ClInclude Include="map\Tile.h">
+    <ClInclude Include="utility\TextureManager.hpp">
+      <Filter>Fichiers d%27en-tête\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="map\Level.hpp">
+      <Filter>Fichiers d%27en-tête\map</Filter>
+    </ClInclude>
+    <ClInclude Include="map\BaseMapGenerator.hpp">
       <Filter>Fichiers d%27en-tête\map</Filter>
     </ClInclude>
   </ItemGroup>
