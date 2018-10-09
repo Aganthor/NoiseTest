@@ -3,13 +3,20 @@
 #include <map>
 #include <string>
 
+#include <sfml/Graphics.hpp>
+
 class TextureManager
 {
 public:
-	TextureManager();
-	~TextureManager();
+	TextureManager() {}
+	~TextureManager() {}
+
+	sf::Texture& getTexture(const std::string& name);
+
+	void addTexture(const std::string& name);
+	void removeTexture(const std::string& name);
 
 
 private:
-	//std::map<std::string, 
+	std::map<std::string, sf::Texture> m_textureMap;
 };

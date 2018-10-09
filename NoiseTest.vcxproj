@@ -152,6 +152,7 @@
     <ClCompile Include="map\WorldMapGenerator.cpp" />
     <ClCompile Include="NoiseTest.cpp" />
     <ClCompile Include="utility\random.cpp" />
+    <ClCompile Include="utility\TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

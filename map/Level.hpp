@@ -5,6 +5,7 @@
 
 #include "BaseMapGenerator.hpp"
 #include "Tileinfo.hpp"
+#include "../utility/TextureManager.hpp"
 
 namespace map
 {
@@ -18,16 +19,23 @@ namespace map
 		Level();
 		~Level();
 
+		void setGenerator(BaseMapGenerator* generator);
 		void generateLevel();
 		void renderLevel();
 		//void saveLevel();
 		//void loadLevel();
 
 		TileInfo& getTileInfo(int x, int y);
+
+	private:
+		void loadTextureFiles();
+
+		void createLevelData();
 		
 
 	private:
-		std::unique_ptr<BaseMapGenerator> m_mapGenerator;
+		BaseMapGenerator* m_mapGenerator;
 		std::vector<std::vector<TileInfo>> m_levelData;
+		TextureManager m_textureManager;
 	};
 }
