@@ -15,10 +15,10 @@ namespace map
 	{
 	}
 
-	void Level::setGenerator(BaseMapGenerator* generator)
-	{
-		m_mapGenerator = generator;
-	}
+	//void Level::setGenerator(BaseMapGenerator* generator)
+	//{
+//		m_mapGenerator = generator;
+	//}
 
 	void Level::generateLevel()
 	{

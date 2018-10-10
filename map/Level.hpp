@@ -7,6 +7,13 @@
 #include "Tileinfo.hpp"
 #include "../utility/TextureManager.hpp"
 
+//TODO: level class should not hold onto a map generator...
+//TODO: It should only be passed by reference within the generateLevel function.
+
+
+//https://codereview.stackexchange.com/questions/87367/texture-managing
+//http://gameprogrammingpatterns.com/service-locator.html
+
 namespace map
 {
 	//
@@ -19,8 +26,7 @@ namespace map
 		Level();
 		~Level();
 
-		void setGenerator(BaseMapGenerator* generator);
-		void generateLevel();
+		void generateLevel(BaseMapGenerator& mapGenerator);
 		void renderLevel();
 		//void saveLevel();
 		//void loadLevel();
@@ -34,7 +40,6 @@ namespace map
 		
 
 	private:
-		BaseMapGenerator* m_mapGenerator;
 		std::vector<std::vector<TileInfo>> m_levelData;
 		TextureManager m_textureManager;
 	};
