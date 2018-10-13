@@ -161,6 +161,7 @@
     <ClInclude Include="FastNoise\FastNoise.h" />
     <ClInclude Include="map\BaseMapGenerator.hpp" />
     <ClInclude Include="map\Level.hpp" />
+    <ClInclude Include="map\MapConstants.h" />
     <ClInclude Include="map\Tileinfo.hpp" />
     <ClInclude Include="map\TileType.hpp" />
     <ClInclude Include="map\WorldMapGenerator.hpp" />

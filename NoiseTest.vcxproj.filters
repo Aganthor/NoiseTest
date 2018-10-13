@@ -74,5 +74,8 @@
     <ClInclude Include="map\BaseMapGenerator.hpp">
       <Filter>Fichiers d%27en-tête\map</Filter>
     </ClInclude>
+    <ClInclude Include="map\MapConstants.h">
+      <Filter>Fichiers d%27en-tête\map</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

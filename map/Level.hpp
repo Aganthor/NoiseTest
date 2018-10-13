@@ -3,7 +3,6 @@
 #include <vector>
 #include <memory>
 
-#include "BaseMapGenerator.hpp"
 #include "Tileinfo.hpp"
 #include "../utility/TextureManager.hpp"
 
@@ -16,6 +15,12 @@
 
 namespace map
 {
+	//
+	//Forward declarations
+	//
+	class BaseMapGenerator;
+
+
 	//
 	// Level class will represent the actual level to be used for logic
 	// and rendering. 
@@ -35,12 +40,11 @@ namespace map
 
 	private:
 		void loadTextureFiles();
-
-		void createLevelData();
 		
-
 	private:
-		std::vector<std::vector<TileInfo>> m_levelData;
+		using TilePtr = std::unique_ptr<TileInfo>;
+		std::vector<TilePtr> m_levelData;
+
 		TextureManager m_textureManager;
 	};
 }

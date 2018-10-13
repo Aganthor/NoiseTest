@@ -17,7 +17,7 @@ namespace map
 		WorldMapGenerator();
 		WorldMapGenerator(int width, int height);
 		WorldMapGenerator(int width, int height, int seed, float scale, int octaves,
-			float persistance, float lacunarity, sf::Vector2f offset);
+			              float persistance, float lacunarity, sf::Vector2f offset);
 		~WorldMapGenerator();
 
 		void generateMap() override;
