@@ -151,6 +151,7 @@
     <ClCompile Include="map\Level.cpp" />
     <ClCompile Include="map\WorldMapGenerator.cpp" />
     <ClCompile Include="NoiseTest.cpp" />
+    <ClCompile Include="renderer\BaseRenderer.cpp" />
     <ClCompile Include="utility\random.cpp" />
     <ClCompile Include="utility\TextureManager.cpp" />
   </ItemGroup>
@@ -165,6 +166,7 @@
     <ClInclude Include="map\Tileinfo.hpp" />
     <ClInclude Include="map\TileType.hpp" />
     <ClInclude Include="map\WorldMapGenerator.hpp" />
+    <ClInclude Include="renderer\BaseRenderer.h" />
     <ClInclude Include="utility\random.hpp" />
     <ClInclude Include="utility\TextureManager.hpp" />
   </ItemGroup>

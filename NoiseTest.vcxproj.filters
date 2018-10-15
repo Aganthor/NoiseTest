@@ -25,6 +25,9 @@
     <Filter Include="Fichiers d%27en-tête\map">
       <UniqueIdentifier>{288f367a-7b90-4208-9f1e-1142695554f9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\renderer">
+      <UniqueIdentifier>{d6b3b61a-4f7f-4c5b-b157-e4d9f6890066}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NoiseTest.cpp">
@@ -43,6 +46,9 @@
       <Filter>Fichiers sources\map</Filter>
     </ClCompile>
     <ClCompile Include="utility\TextureManager.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\BaseRenderer.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -76,6 +82,9 @@
     </ClInclude>
     <ClInclude Include="map\MapConstants.h">
       <Filter>Fichiers d%27en-tête\map</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\BaseRenderer.h">
+      <Filter>Fichiers d%27en-tête\renderer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

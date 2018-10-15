@@ -2,10 +2,11 @@
 
 #include <utility>
 
+#include <sfml/Graphics.hpp>
+
 #include "BaseMapGenerator.hpp"
 #include "MapConstants.h"
 #include "TileType.hpp"
-
 
 namespace map
 {
@@ -69,7 +70,7 @@ namespace map
 		}
 	}
 
-	void Level::renderLevel()
+	void Level::renderLevel(sf::RenderWindow& window)
 	{
 	}
 

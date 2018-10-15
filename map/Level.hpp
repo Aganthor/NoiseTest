@@ -13,6 +13,11 @@
 //https://codereview.stackexchange.com/questions/87367/texture-managing
 //http://gameprogrammingpatterns.com/service-locator.html
 
+namespace sf
+{
+	class RenderWindow;
+}
+
 namespace map
 {
 	//
@@ -32,7 +37,7 @@ namespace map
 		~Level();
 
 		void generateLevel(BaseMapGenerator& mapGenerator);
-		void renderLevel();
+		void renderLevel(sf::RenderWindow& window);
 		//void saveLevel();
 		//void loadLevel();
 
